@@ -28,3 +28,7 @@ npm install
 Spusť vývojový server:
 npm run dev
 Frontend poběží na http://localhost:5173 a bude komunikovat s backendem.
+
+## Databáze
+
+V projektu je složka `database`, která obsahuje export databáze ve formátu SQL pro import databáze produktů.
