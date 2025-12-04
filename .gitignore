@@ -1,0 +1,9 @@
+# Frontend
+order-app-client/node_modules/
+order-app-client/dist/
+order-app-client/build/
+
+# Backend
+order-app-server/target/
+order-app-server/.idea/
+order-app-server/*.iml
