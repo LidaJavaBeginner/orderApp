@@ -3,10 +3,9 @@ Jednoduchá aplikace pro tvorbu objednávek. Umožní zákazníkovi vybrat produ
 
 Tento projekt obsahuje **backend** ve Spring Boot (Java) a **frontend** v Reactu (Vite).  
 Struktura repozitáře:
-my-project/
-├── backend/ # Spring Boot aplikace
-├── frontend/ # React aplikace
-└── README.md
+Objednávkový systém/
+├── order-app-client/  (React frontend)
+├── order-app-server/  (Spring Boot backend)
 
 ## Požadavky
 
