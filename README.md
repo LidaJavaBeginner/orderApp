@@ -6,6 +6,7 @@ Struktura repozitáře:
 Objednávkový systém/
 ├── order-app-client/  (React frontend)
 ├── order-app-server/  (Spring Boot backend)
+├── database/ (databáze s produkty)
 
 ## Požadavky
 
