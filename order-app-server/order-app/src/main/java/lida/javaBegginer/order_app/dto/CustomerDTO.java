@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class CustomerDTO {
 
-    @JsonProperty("_id")
+    @JsonProperty("id")
     private Long id;
 
     private String firstName;

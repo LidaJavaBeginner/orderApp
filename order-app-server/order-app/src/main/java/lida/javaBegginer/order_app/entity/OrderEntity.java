@@ -36,9 +36,6 @@ public class OrderEntity {
     @Column
     private Double totalVatPrice;
 
-    @Column
-    private String note;
-
 
     @PrePersist
     public void generateOrderNumber() {

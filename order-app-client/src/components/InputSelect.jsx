@@ -29,7 +29,7 @@ export function InputSelect(props) {
 
         {props.items.map((item, index) => (
               <option key={required ? index : index + 1} value={item.id}>
-                 {`${item.name}, cena: ${item.unitPrice}Kč, popis: ${item.description}`}
+                 {`${item.name}, cena bez DPH: ${item.unitPrice}Kč, popis: ${item.description}`}
               </option>
             ))
         }

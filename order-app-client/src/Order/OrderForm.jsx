@@ -2,14 +2,13 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { getApi, postApi } from "../utils/api";
-import FlashMessage from "../components/flashMessage";
 import InputSelect from "../components/InputSelect";
 import InputField from "../components/InputField";
 
 
+
 const OrderForm = () => {
     const navigate = useNavigate();
-    const { id } = useParams();
     const [order, setOrder] = useState({
 
         "customerDTO": {
@@ -47,7 +46,7 @@ const OrderForm = () => {
         postApi("/api/order", order)
             .then((data) => {
                 console.log("Data ze serveru: ", data)
-               
+
                 navigate(`/order/${data.id}`, {
                     state: { order: data }
                 });
@@ -58,7 +57,7 @@ const OrderForm = () => {
             });
     };
 
-    
+
     // Výpočet ceny
     const totalExclVAT = selectedProductPrice * productCount;
     const totalInclVAT = totalExclVAT * 1.21;
@@ -69,10 +68,8 @@ const OrderForm = () => {
         <div className="form-group">
             <h1>Nová objednávka</h1>
             <hr />
-            {errorState ? (
-                <div className="alert alert-danger">{errorState}</div>
-            ) : null}
-            
+            {errorState ? (<div className="alert alert-danger">{errorState}</div>) : null}
+
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-8">

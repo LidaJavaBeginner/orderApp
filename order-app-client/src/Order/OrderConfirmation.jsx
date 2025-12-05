@@ -58,7 +58,7 @@ const OrderConfirmation = () => {
           <h5>Produkt</h5>
           <p>
             <strong>{order.product.name}</strong><br />
-            Cena za ks: {order.product.unitPrice?.toFixed(2)} Kč<br />
+            Cena za ks: {order.product.unitPrice?.toFixed(2)} Kč bez DPH<br />
             Počet: {order.productCount}<br />
             Celkem bez DPH: {order.totalPrice?.toFixed(2)} Kč<br />
             DPH: {order.totalVat?.toFixed(2)} Kč<br /><br />
