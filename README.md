@@ -32,4 +32,12 @@ Frontend poběží na http://localhost:5173 a bude komunikovat s backendem.
 
 ## Databáze
 
+# Použití databáze
+Výchozí databáze pro online nasazení a rychlý start je **H2** (in-memory).  
+Pro lokální testování s MySQL/MariaDB aktivujte profil `mysql`:
+
+  ```bash
+  java -jar order-app-0.0.1-SNAPSHOT.jar --spring.profiles.active=mysql
+
+
 V projektu je složka `database`, která obsahuje export databáze ve formátu SQL pro import databáze produktů.
